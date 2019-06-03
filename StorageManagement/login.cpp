@@ -4,6 +4,7 @@
 #include <QIcon>
 #include "mainwindow.h"
 #include "dialogstockmanage.h"
+#include "dialogviewstock.h"
 
 login::login(QWidget *parent) :
     QWidget(parent),
@@ -17,6 +18,10 @@ login::login(QWidget *parent) :
     dialogstockmanage = new DialogStockmanage(this);
 
     dialogstockmanage->setWindowModality(Qt::ApplicationModal);
+
+    dialogviewStock = new DialogViewStock(this);
+
+    dialogviewStock->setWindowModality(Qt::ApplicationModal);
 }
 
 login::~login()
@@ -82,4 +87,9 @@ void login::on_btn_logout_clicked()
 void login::on_btn_stockmanage_clicked()
 {
     dialogstockmanage->show();
+}
+
+void login::on_btn_selstock_clicked()
+{
+    dialogviewStock->show();
 }

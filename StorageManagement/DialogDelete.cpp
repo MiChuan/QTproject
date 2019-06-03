@@ -7,6 +7,7 @@ DialogDelete::DialogDelete(QWidget *parent) :
     ui(new Ui::DialogDelete)
 {
     ui->setupUi(this);
+    this->setWindowTitle("删除货品");
 }
 
 DialogDelete::~DialogDelete()

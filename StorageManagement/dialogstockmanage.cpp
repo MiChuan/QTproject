@@ -12,6 +12,7 @@ DialogStockmanage::DialogStockmanage(QWidget *parent) :
     ui(new Ui::DialogStockmanage)
 {
     ui->setupUi(this);
+    this->setWindowTitle("库存管理");
 
     /**二级界面**/
     dialogDelete = new DialogDelete(this);
@@ -30,10 +31,6 @@ DialogStockmanage::DialogStockmanage(QWidget *parent) :
     model = new QSqlQueryModel(ui->tableView);/**将数据模型与QTableView绑定**/
     /**tableView列宽等宽自适应**/
     ui->tableView->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
-
-
-    showAllGoods();
-
 }
 
 
@@ -63,9 +60,6 @@ void DialogStockmanage::showAllGoods()
                     "STORE  as '货品库存量',"
                     "MANUFACTURER  as '生产厂家' from COMMODITY;");
     ui->tableView->setModel(model);
-
-    helper->closeDatabase();
-
 }
 
 
@@ -112,15 +106,8 @@ void DialogStockmanage::on_bit_add_clicked()
     DBHelper *helper =  DBHelper::getInstance();
     helper->openDatabase();
     QSqlQuery query;
-    query.prepare("select * from COMMODITY where CID = :CID;");
-    query.bindValue(":CID", ui->le_id->text());
-    bool ret = query.exec();
-    if(ret){
-        qDebug()<<"create tb_goods success";
-    } else {
-        qDebug()<<query.lastError().text();
-    }
-    if(query.size()!=0) {
+    query.exec(QString("select * from COMMODITY where CID = '%1';").arg(ui->le_id->text()));//查询当前货品码是否已存在
+    if(query.value(0).toString() == ui->le_id->text()){
         qDebug()<<"CID : " + ui->le_id->text() + " is existed." ;
         QMessageBox::information(this,"警告","货品号 : "+ui->le_id->text()+"已存在");
         return;
@@ -131,7 +118,7 @@ void DialogStockmanage::on_bit_add_clicked()
     QString id = ui->le_id->text();
     QString name = ui->le_name->text();
     QString stid = ui->le_stid->text();
-    int num = ui->le_num->text().toInt();
+    QString num = ui->le_num->text();
     QString ma = ui->le_ma->text();
 
     Goods goods(id,name,stid,num,ma);

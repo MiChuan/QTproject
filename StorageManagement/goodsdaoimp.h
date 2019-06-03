@@ -13,13 +13,6 @@ class GoodsDaoImp:public GoodsDao
 {
 public:
     GoodsDaoImp();
-    QSqlQuery selectGoods();
-    QSqlQuery selectGoodsByName(QString GoodsName);
-    QSqlQuery selectGoodsById(QString goodsId);
-    QSqlQuery selectGoodsByStid(QString goodsStid);
-    QSqlQuery selectGoodsByMa(QString goodsMa);
-    QSqlQuery selectGoodsByNum(int goodsNum);
-
 
     bool insertGoods(const Goods &goods) ;
     bool deleteGoods(const QString &goodsId) ;

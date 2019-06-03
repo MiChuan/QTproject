@@ -5,6 +5,7 @@
 #include "user.h"
 #include "QString"
 #include "dialogstockmanage.h"
+#include "dialogviewstock.h"
 
 namespace Ui {
 class login;
@@ -28,9 +29,12 @@ private slots:
 
     void on_btn_stockmanage_clicked();
 
+    void on_btn_selstock_clicked();
+
 private:
     Ui::login *ui;
     DialogStockmanage *dialogstockmanage;
+    DialogViewStock *dialogviewStock;
 
 };
 

@@ -7,6 +7,7 @@ DialogUpdate::DialogUpdate(QWidget *parent) :
     ui(new Ui::DialogUpdate)
 {
     ui->setupUi(this);
+    this->setWindowTitle("修改货品信息");
 }
 
 DialogUpdate::~DialogUpdate()
@@ -34,7 +35,7 @@ void DialogUpdate::on_buttonBox_accepted()
         id_new = ui->le_id_old->text();
     QString name_new = ui->le_name_new->text();
     QString stid_new = ui->le_stid_new->text();
-    int num_new = ui->le_num_new->text().toInt();
+    QString num_new = ui->le_num_new->text();
     QString ma_new = ui->le_ma_new->text();
 
     Goods goods(id_new,name_new,stid_new,num_new,ma_new);

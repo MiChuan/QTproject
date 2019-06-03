@@ -5,18 +5,18 @@
 class Goods
 {
 public:
-    Goods(const QString &goodsId,const QString &goodsName, const QString &goodsStid, const int &goodsNum,const QString &goodsMa);
+    Goods(const QString &goodsId,const QString &goodsName, const QString &goodsStid, const QString &goodsNum,const QString &goodsMa);
     QString getGoodsName()const;
     QString getGoodsId()const;
     QString getGoodsStid()const;
-    int getGoodsNum()const;
+    QString getGoodsNum()const;
     QString getGoodsMa()const;
 
 private:
     QString goodsName;
     QString goodsId;
     QString goodsStid;
-    int goodsNum;
+    QString goodsNum;
     QString goodsMa;
 };
 

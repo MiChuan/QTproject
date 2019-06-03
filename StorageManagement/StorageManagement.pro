@@ -38,7 +38,8 @@ SOURCES += \
     goodsdaoimp.cpp \
     DialogDelete.cpp \
     DialogSelect.cpp \
-    DialogUpdate.cpp
+    DialogUpdate.cpp \
+    dialogviewstock.cpp
 
 HEADERS += \
         mainwindow.h \
@@ -53,7 +54,8 @@ HEADERS += \
     goodsdaoimp.h \
     DialogDelete.h \
     DialogSelect.h \
-    DialogUpdate.h
+    DialogUpdate.h \
+    dialogviewstock.h
 
 FORMS += \
         mainwindow.ui \
@@ -61,7 +63,8 @@ FORMS += \
     dialogstockmanage.ui \
     DialogDelete.ui \
     DialogSelect.ui \
-    DialogUpdate.ui
+    DialogUpdate.ui \
+    dialogviewstock.ui
 
 RESOURCES += \
     mypictures.qrc
