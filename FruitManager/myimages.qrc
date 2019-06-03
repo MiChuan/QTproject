@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/myImages">
+        <file>images/fruit_icon.png</file>
+        <file>images/icon1.png</file>
+        <file>images/logo.ico</file>
+        <file>images/pwd_icon.jpg</file>
+        <file>images/pwd.png</file>
+        <file>images/lock.svg</file>
+        <file>images/user.svg</file>
+    </qresource>
+</RCC>
