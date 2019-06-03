@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/pictures">
+        <file>images/pwd.jpg</file>
+        <file>images/user.jpg</file>
+        <file>images/user.svg</file>
+        <file>images/warehouselogo.ico</file>
+    </qresource>
+</RCC>
