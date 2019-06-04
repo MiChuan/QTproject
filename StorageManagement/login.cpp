@@ -5,6 +5,7 @@
 #include "mainwindow.h"
 #include "dialogstockmanage.h"
 #include "dialogviewstock.h"
+#include "dialoglackmanage.h"
 
 login::login(QWidget *parent) :
     QWidget(parent),
@@ -22,6 +23,10 @@ login::login(QWidget *parent) :
     dialogviewStock = new DialogViewStock(this);
 
     dialogviewStock->setWindowModality(Qt::ApplicationModal);
+
+    dialoglackmanage = new DialogLackManage(this);
+
+    dialoglackmanage->setWindowModality(Qt::ApplicationModal);
 }
 
 login::~login()
@@ -92,4 +97,9 @@ void login::on_btn_stockmanage_clicked()
 void login::on_btn_selstock_clicked()
 {
     dialogviewStock->show();
+}
+
+void login::on_btn_need_clicked()
+{
+    dialoglackmanage->show();
 }

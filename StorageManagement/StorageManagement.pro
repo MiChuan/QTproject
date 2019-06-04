@@ -39,7 +39,14 @@ SOURCES += \
     DialogDelete.cpp \
     DialogSelect.cpp \
     DialogUpdate.cpp \
-    dialogviewstock.cpp
+    dialogviewstock.cpp \
+    dialoglackmanage.cpp \
+    lack.cpp \
+    lackdao.cpp \
+    lackdaoimp.cpp \
+    dialogdeletelack.cpp \
+    dialogupdatelack.cpp \
+    dialogselectlack.cpp
 
 HEADERS += \
         mainwindow.h \
@@ -55,7 +62,14 @@ HEADERS += \
     DialogDelete.h \
     DialogSelect.h \
     DialogUpdate.h \
-    dialogviewstock.h
+    dialogviewstock.h \
+    dialoglackmanage.h \
+    lack.h \
+    lackdao.h \
+    lackdaoimp.h \
+    dialogdeletelack.h \
+    dialogupdatelack.h \
+    dialogselectlack.h
 
 FORMS += \
         mainwindow.ui \
@@ -64,7 +78,11 @@ FORMS += \
     DialogDelete.ui \
     DialogSelect.ui \
     DialogUpdate.ui \
-    dialogviewstock.ui
+    dialogviewstock.ui \
+    dialoglackmanage.ui \
+    dialogdeletelack.ui \
+    dialogupdatelack.ui \
+    dialogselectlack.ui
 
 RESOURCES += \
     mypictures.qrc

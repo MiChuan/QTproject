@@ -6,6 +6,7 @@
 #include "QString"
 #include "dialogstockmanage.h"
 #include "dialogviewstock.h"
+#include "dialoglackmanage.h"
 
 namespace Ui {
 class login;
@@ -31,11 +32,13 @@ private slots:
 
     void on_btn_selstock_clicked();
 
+    void on_btn_need_clicked();
+
 private:
     Ui::login *ui;
     DialogStockmanage *dialogstockmanage;
     DialogViewStock *dialogviewStock;
-
+    DialogLackManage *dialoglackmanage;
 };
 
 #endif // LOGIN_H
