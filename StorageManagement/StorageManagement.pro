@@ -46,7 +46,18 @@ SOURCES += \
     lackdaoimp.cpp \
     dialogdeletelack.cpp \
     dialogupdatelack.cpp \
-    dialogselectlack.cpp
+    dialogselectlack.cpp \
+    dialogviewlack.cpp \
+    dialogpurchasemanage.cpp \
+    purchase.cpp \
+    purchasedao.cpp \
+    purchasedaoimp.cpp \
+    dialogdeletepurchase.cpp \
+    dialogupdatepurchase.cpp \
+    dialogselectpurchase.cpp \
+    dialogcheckpurchase.cpp \
+    dialogpurchasecheckresult.cpp \
+    dialoginputstock.cpp
 
 HEADERS += \
         mainwindow.h \
@@ -69,7 +80,18 @@ HEADERS += \
     lackdaoimp.h \
     dialogdeletelack.h \
     dialogupdatelack.h \
-    dialogselectlack.h
+    dialogselectlack.h \
+    dialogviewlack.h \
+    dialogpurchasemanage.h \
+    purchase.h \
+    purchasedao.h \
+    purchasedaoimp.h \
+    dialogdeletepurchase.h \
+    dialogupdatepurchase.h \
+    dialogselectpurchase.h \
+    dialogcheckpurchase.h \
+    dialogpurchasecheckresult.h \
+    dialoginputstock.h
 
 FORMS += \
         mainwindow.ui \
@@ -82,7 +104,15 @@ FORMS += \
     dialoglackmanage.ui \
     dialogdeletelack.ui \
     dialogupdatelack.ui \
-    dialogselectlack.ui
+    dialogselectlack.ui \
+    dialogviewlack.ui \
+    dialogpurchasemanage.ui \
+    dialogdeletepurchase.ui \
+    dialogupdatepurchase.ui \
+    dialogselectpurchase.ui \
+    dialogcheckpurchase.ui \
+    dialogpurchasecheckresult.ui \
+    dialoginputstock.ui
 
 RESOURCES += \
     mypictures.qrc

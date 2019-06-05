@@ -6,6 +6,9 @@
 #include "dialogstockmanage.h"
 #include "dialogviewstock.h"
 #include "dialoglackmanage.h"
+#include "dialogviewlack.h"
+#include "dialogpurchasemanage.h"
+#include "dialogcheckpurchase.h"
 
 login::login(QWidget *parent) :
     QWidget(parent),
@@ -27,6 +30,18 @@ login::login(QWidget *parent) :
     dialoglackmanage = new DialogLackManage(this);
 
     dialoglackmanage->setWindowModality(Qt::ApplicationModal);
+
+    dialogviewLack = new DialogViewLack(this);
+
+    dialogviewLack->setWindowModality(Qt::ApplicationModal);
+
+    dialogpurchasemanage = new DialogPurchaseManage(this);
+
+    dialogpurchasemanage->setWindowModality(Qt::ApplicationModal);
+
+    dialogCheckPurchase = new DialogCheckPurchase(this);
+
+    dialogCheckPurchase->setWindowModality(Qt::ApplicationModal);
 }
 
 login::~login()
@@ -102,4 +117,19 @@ void login::on_btn_selstock_clicked()
 void login::on_btn_need_clicked()
 {
     dialoglackmanage->show();
+}
+
+void login::on_btn_selneed_clicked()
+{
+    dialogviewLack->show();
+}
+
+void login::on_btn_outable_clicked()
+{
+    dialogpurchasemanage->show();
+}
+
+void login::on_btn_incheck_clicked()
+{
+    dialogCheckPurchase->show();
 }

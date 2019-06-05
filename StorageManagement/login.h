@@ -7,6 +7,9 @@
 #include "dialogstockmanage.h"
 #include "dialogviewstock.h"
 #include "dialoglackmanage.h"
+#include "dialogviewlack.h"
+#include "dialogpurchasemanage.h"
+#include "dialogcheckpurchase.h"
 
 namespace Ui {
 class login;
@@ -34,11 +37,20 @@ private slots:
 
     void on_btn_need_clicked();
 
+    void on_btn_selneed_clicked();
+
+    void on_btn_outable_clicked();
+
+    void on_btn_incheck_clicked();
+
 private:
     Ui::login *ui;
     DialogStockmanage *dialogstockmanage;
     DialogViewStock *dialogviewStock;
     DialogLackManage *dialoglackmanage;
+    DialogViewLack * dialogviewLack;
+    DialogPurchaseManage *dialogpurchasemanage;
+    DialogCheckPurchase * dialogCheckPurchase;
 };
 
 #endif // LOGIN_H

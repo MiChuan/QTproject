@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DialogUpdatePurchase</class>
+ <widget class="QDialog" name="DialogUpdatePurchase">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QWidget" name="gridLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>361</width>
+     <height>219</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="6" column="0">
+     <widget class="QLabel" name="label_7">
+      <property name="text">
+       <string>生产厂家</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="2">
+     <widget class="QLineEdit" name="line_stid"/>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="label_5">
+      <property name="text">
+       <string>进货量</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="0">
+     <widget class="QLabel" name="label_6">
+      <property name="text">
+       <string>进货时间</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="2">
+     <widget class="QLineEdit" name="line_num"/>
+    </item>
+    <item row="6" column="2">
+     <widget class="QLineEdit" name="line_ma"/>
+    </item>
+    <item row="5" column="2">
+     <widget class="QLineEdit" name="line_time"/>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="label_4">
+      <property name="text">
+       <string>货品名</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>进货单号</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="QLineEdit" name="line_old_pid"/>
+    </item>
+    <item row="1" column="2">
+     <widget class="QLineEdit" name="line_goodsid"/>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>仓库号</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>货品号</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="2">
+     <widget class="QLineEdit" name="line_goodsname"/>
+    </item>
+    <item row="7" column="0">
+     <widget class="QLabel" name="label_8">
+      <property name="text">
+       <string>新进货单号</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="2">
+     <widget class="QLineEdit" name="line_new_pid"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QDialogButtonBox" name="buttonBox">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>250</y>
+     <width>193</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="standardButtons">
+    <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -18,11 +18,12 @@ DialogStockmanage::DialogStockmanage(QWidget *parent) :
     dialogDelete = new DialogDelete(this);
     dialogUpdate = new DialogUpdate(this);
     dialogSelect = new DialogSelect(this);
+    dialogInputStock = new DialogInputStock(this);
     /**设置二级界面为模态**/
     dialogDelete->setWindowModality(Qt::ApplicationModal);
     dialogUpdate->setWindowModality(Qt::ApplicationModal);
     dialogSelect->setWindowModality(Qt::ApplicationModal);
-
+    dialogInputStock->setWindowModality(Qt::ApplicationModal);
 
 
 
@@ -135,4 +136,9 @@ void DialogStockmanage::on_bit_add_clicked()
         qDebug()<<"insert failed";
         QMessageBox::critical(this,"插入","插入失败，请重新插入");
     }
+}
+
+void DialogStockmanage::on_bit_input_clicked()
+{
+    dialogInputStock->show();
 }

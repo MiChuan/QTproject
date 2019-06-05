@@ -16,6 +16,7 @@
 #include "DialogDelete.h"
 #include "DialogSelect.h"
 #include "DialogUpdate.h"
+#include "dialoginputstock.h"
 
 namespace Ui {
 class DialogStockmanage;
@@ -42,6 +43,8 @@ private slots:
 
     void on_bit_add_clicked();
 
+    void on_bit_input_clicked();
+
 private:
     Ui::DialogStockmanage *ui;
     QSqlQueryModel *model;
@@ -49,6 +52,7 @@ private:
     DialogDelete *dialogDelete;
     DialogUpdate *dialogUpdate;
     DialogSelect *dialogSelect;
+    DialogInputStock *dialogInputStock;
 };
 
 #endif // DIALOGSTOCKMANAGE_H
